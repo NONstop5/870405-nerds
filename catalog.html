@@ -6,52 +6,78 @@
   </head>
   <body>
     <header class="main-header">
-        <nav class="main-navigation">
-          <h1 class="visually-hidden">Веб-студиа Нёрдс</h1>
+      <nav class="main-navigation">
+        <a href="index.html">
           <img src="http://placehold.it/160x65" alt="Логотип">
-          <ul class="site-navigation">
-            <li><a href="about.html">Студия</a></li>
-            <li><a href="clients.html">Клиенты</a></li>
-            <li><a href="catalog.html">Магазин</a></li>
-            <li><a href="contscts.html">Контакты</a></li>
-          </ul>
-          <ul class="basket-navigation">
-            <li><span class="basket-icon"></span></li>
-            <li><a href="basket.html">Корзина</a></li>
-          </ul>
+        </a>
+        <ul class="site-navigation">
+          <li><a href="about.html">Студия</a></li>
+          <li><a href="clients.html">Клиенты</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="contscts.html">Контакты</a></li>
+        </ul>
+        <ul class="basket-navigation">
+          <li>
+            <span class="basket-icon"></span>
+            <a href="basket.html">Корзина</a>
+          </li>
+        </ul>
       </nav>
-      <section class="">
-        <b>Магазин готовых шаблонов</b>
+      <section class="page-header">
+        <h1>Магазин готовых шаблонов</h1>
       </section>
     </header>
     <main>
-      <section>
-        <!--Фильтры и сортировка-->
+      <section class="left-panel">
+        <section class="price-filter-header">
+          <h2>СТОИМОСТЬ:</h2>
+        </section>
+        <section class="price-filter-slider">
+          <!--Фильтр цены-->
+        </section>
+        <section>
+          <h2>СЕТКА:</h2>
+          <ul>
+            <li>Адаптивная</li>
+            <li>Фиксированная</li>
+            <li>Резиновая</li>
+          </ul>
+          <h2>ОСОБЕННОСТИ:</h2>
+          <ul>
+            <li>Слайдер</li>
+            <li>Блок преимуществ</li>
+            <li>Новости</li>
+            <li>Галерея</li>
+            <li>Корзина</li>
+          </ul>
+          <button type="submit">ПОКАЗАТЬ</button>
+        </section>
       </section>
-      <section>
-        <h2>СЕТКА:</h2>
-        <ul>
-          <li>Адаптивная</li>
-          <li>Фиксированная</li>
-          <li>Резиновая</li>
-        </ul>
-        <h2>ОСОБЕННОСТИ:</h2>
-        <ul>
-          <li>Слайдер</li>
-          <li>Блок преимуществ</li>
-          <li>Новости</li>
-          <li>Галерея</li>
-          <li>Корзина</li>
-        </ul>
-        <button type="submit">ПОКАЗАТЬ</button>
-      </section>
-      <section class="cards">
-        <article class="card-hover">
-          <img src="http://placehold.it/360x576" alt="">
-        </article>
-        <article class="card">
+      <section class="catalog-content">
+        <section class="catalog-sort">
+          <h2>СОРТИРОВАТЬ:</h2>
+          <!--Сортровка каталога-->
+        </section>
+        <section class="catalog-cards">
+          <article class="catalog-card-hover">
             <img src="http://placehold.it/360x576" alt="">
           </article>
+          <article class="catalog-card">
+              <img src="http://placehold.it/360x576" alt="">
+          </article>
+          <article class="catalog-card">
+              <img src="http://placehold.it/360x576" alt="">
+          </article>
+          <article class="catalog-card">
+              <img src="http://placehold.it/360x576" alt="">
+          </article>
+          <article class="catalog-card">
+              <img src="http://placehold.it/360x576" alt="">
+          </article>
+          <article class="catalog-card">
+              <img src="http://placehold.it/360x576" alt="">
+          </article>
+        </section>
       </section>
     </main>
     <footer>
@@ -60,12 +86,12 @@
       </section>
       <section class="social">
         <ul>
-          <li>VK</li>
-          <li>FB</li>
-          <li>IN</li>
+          <li><a href="">VK</a></li>
+          <li><a href="">FB</a></li>
+          <li><a href="">IN</a></li>
         </ul>
         <div>
-            Давайте дружить, это выгодно!
+            <p>Давайте дружить, это выгодно!</p>
             <span>Скидка 10% для друзей из социальных сетей.</span>
         </div>
       </section>

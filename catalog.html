@@ -28,11 +28,13 @@
   </header>
   <main>
     <section class="left-panel">
-      <section class="price-filter-header">
+      <section class="price-filter">
         <h2>СТОИМОСТЬ:</h2>
-      </section>
-      <section class="price-filter-slider">
-        <!--Фильтр цены-->
+        <input type="range" name="price" min="0" max="15000">
+        <p class="price-filter-values">
+          ОТ<input type="text" name="price_min">
+          ДО<input type="text" name="price_max">
+        </p>
       </section>
       <section>
         <h2>СЕТКА:</h2>
@@ -55,9 +57,14 @@
     <section class="catalog-content">
       <section class="catalog-sort">
         <h2>СОРТИРОВАТЬ:</h2>
-        <!--Сортровка каталога-->
+        <a class="catalog-sort-active" href="catalog.html">ПО ЦЕНЕ</a>
+        <a href="catalog.html">ПО ТИПУ</a>
+        <a href="catalog.html">ПО НАЗВАНИЮ</a>
+        <a class="catalog-sort-arrowdown" href="catalog.html"><span></span>\/</span></a>
+        <a class="catalog-sort-arrowdown" href="catalog.html"><span>/\</span></a>
       </section>
       <section class="catalog-cards">
+        <h2 class="visually-hidden">Каталог товаров</h2>
         <article class="catalog-card-hover">
           <img src="http://placehold.it/360x576" alt="">
           <div class="catalog-card-desc visually-hidden">
@@ -107,13 +114,32 @@
           </div>
         </article>
       </section>
+      <section class="pagination">
+        <ul class="pagination-list">
+          <li class="pagination-item"></li>
+          <li class="pagination-item"></li>
+          <li class="pagination-item"></li>
+          <li class="pagination-item-next"></li>
+        </ul>
+      </section>
     </section>
   </main>
   <footer>
-    <section class="map">
-      <!--Карта-->
+  <section class="map">
+      <h2 class="visually-hidden">Карта проезда</h2>
+      <img src="http://placehold.it/1000x500">
+      <div class="map-window">
+        <p class="map-window-title">NЁRDS DESIGN STUDIO</p>
+        <p class="map-window-text">
+          191186, Санкт-Петербург,<br>
+          ул. Б. Конюшенная, д. 19/8<br><br>
+          тел. +7 (812) 275-75-75
+        </p>
+        <a class="map-window-button" href="contacts.html">НАПИШИТЕ НАМ</a>
+      </div>
     </section>
     <section class="social">
+      <h2 class="visually-hidden">Мы в соцсетях</h2>
       <ul>
         <li><a href="">VK</a></li>
         <li><a href="">FB</a></li>

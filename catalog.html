@@ -29,11 +29,13 @@
   <main>
     <section class="left-panel">
       <section class="price-filter">
-        <h2>СТОИМОСТЬ:</h2>
-        <input type="range" name="price" min="0" max="15000">
+        <h2>Стоимость:</h2>
+        <!--Ползунок фильтра цены-->
         <p class="price-filter-values">
-          ОТ<input type="text" name="price_min">
-          ДО<input type="text" name="price_max">
+          <label for="price-min">от</label>
+          <input id="price-min" type="text" name="price_min">
+          <label for="price-max">до</label>
+          <input id="price-max" type="text" name="price_max">
         </p>
       </section>
       <section>
@@ -51,17 +53,17 @@
           <li>Галерея</li>
           <li>Корзина</li>
         </ul>
-        <button type="submit">ПОКАЗАТЬ</button>
+        <button type="submit">Показать</button>
       </section>
     </section>
     <section class="catalog-content">
       <section class="catalog-sort">
         <h2>СОРТИРОВАТЬ:</h2>
-        <a class="catalog-sort-active" href="catalog.html">ПО ЦЕНЕ</a>
-        <a href="catalog.html">ПО ТИПУ</a>
-        <a href="catalog.html">ПО НАЗВАНИЮ</a>
-        <a class="catalog-sort-arrowdown" href="catalog.html"><span></span>\/</span></a>
-        <a class="catalog-sort-arrowdown" href="catalog.html"><span>/\</span></a>
+        <a class="catalog-sort-active" href="#">по цене</a>
+        <a href="#">по типу</a>
+        <a href="#">по названию</a>
+        <a class="catalog-sort-arrowdown" href="#">\/</a>
+        <a class="catalog-sort-arrowdown" href="#">/\</a>
       </section>
       <section class="catalog-cards">
         <h2 class="visually-hidden">Каталог товаров</h2>
@@ -70,7 +72,7 @@
           <div class="catalog-card-desc visually-hidden">
             <h3>SEDONA</h3>
             <p>Информационный сайт для туристов</p>
-            <a class="catalog-card-order" href="">9 900 РУБ.</a>
+            <a class="catalog-card-order" href="#">9 900 руб.</a>
           </div>
         </article>
         <article class="catalog-card">
@@ -78,7 +80,7 @@
           <div class="catalog-card-desc visually-hidden">
             <h3>SEDONA</h3>
             <p>Информационный сайт для туристов</p>
-            <a class="catalog-card-order" href="">9 900 РУБ.</a>
+            <a class="catalog-card-order" href="#">9 900 руб.</a>
           </div>
         </article>
         <article class="catalog-card">
@@ -86,7 +88,7 @@
           <div class="catalog-card-desc visually-hidden">
             <h3>SEDONA</h3>
             <p>Информационный сайт для туристов</p>
-            <a class="catalog-card-order" href="">9 900 РУБ.</a>
+            <a class="catalog-card-order" href="#">9 900 руб.</a>
           </div>
         </article>
         <article class="catalog-card">
@@ -94,7 +96,7 @@
           <div class="catalog-card-desc visually-hidden">
             <h3>SEDONA</h3>
             <p>Информационный сайт для туристов</p>
-            <a class="catalog-card-order" href="">9 900 РУБ.</a>
+            <a class="catalog-card-order" href="#">9 900 руб.</a>
           </div>
         </article>
         <article class="catalog-card">
@@ -102,7 +104,7 @@
           <div class="catalog-card-desc visually-hidden">
             <h3>SEDONA</h3>
             <p>Информационный сайт для туристов</p>
-            <a class="catalog-card-order" href="">9 900 РУБ.</a>
+            <a class="catalog-card-order" href="#">9 900 руб.</a>
           </div>
         </article>
         <article class="catalog-card">
@@ -110,24 +112,24 @@
           <div class="catalog-card-desc visually-hidden">
             <h3>SEDONA</h3>
             <p>Информационный сайт для туристов</p>
-            <a class="catalog-card-order" href="">9 900 РУБ.</a>
+            <a class="catalog-card-order" href="#">9 900 руб.</a>
           </div>
         </article>
       </section>
       <section class="pagination">
         <ul class="pagination-list">
-          <li class="pagination-item"></li>
-          <li class="pagination-item"></li>
-          <li class="pagination-item"></li>
-          <li class="pagination-item-next"></li>
+          <li class="pagination-item"><a href="#">1</a></li>
+          <li class="pagination-item"><a href="#">2</a></li>
+          <li class="pagination-item"><a href="#">3</a></li>
+          <li class="pagination-item-next"><a href="#">Следующая</a></li>
         </ul>
       </section>
     </section>
   </main>
   <footer>
-  <section class="map">
+    <section class="map">
       <h2 class="visually-hidden">Карта проезда</h2>
-      <img src="http://placehold.it/1000x500">
+      <img src="http://placehold.it/1000x500" alt="Карта проезда">
       <div class="map-window">
         <p class="map-window-title">NЁRDS DESIGN STUDIO</p>
         <p class="map-window-text">
@@ -135,15 +137,15 @@
           ул. Б. Конюшенная, д. 19/8<br><br>
           тел. +7 (812) 275-75-75
         </p>
-        <a class="map-window-button" href="contacts.html">НАПИШИТЕ НАМ</a>
+        <a class="map-window-button" href="contacts.html">Напишите нам</a>
       </div>
     </section>
     <section class="social">
       <h2 class="visually-hidden">Мы в соцсетях</h2>
       <ul>
-        <li><a href="">VK</a></li>
-        <li><a href="">FB</a></li>
-        <li><a href="">IN</a></li>
+        <li><a href="#">VK</a></li>
+        <li><a href="#">FB</a></li>
+        <li><a href="#">IN</a></li>
       </ul>
       <div>
         <p>Давайте дружить, это выгодно!</p>

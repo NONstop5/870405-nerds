@@ -138,7 +138,7 @@
           ул. Б. Конюшенная, д. 19/8<br><br>
           тел. +7 (812) 275-75-75
         </p>
-        <a class="button map-window" href="#">Напишите нам</a>
+        <a class="button map-feedback" href="#">Напишите нам</a>
       </div>
     </section>
     <section class="social">
@@ -157,7 +157,15 @@
 
   <section class="modal modal-feedback">
     <h2>Напишите нам</h2>
-    <!--Форма обратной связи-->
+    <form action="echo.htmlacademy.ru" method="POST">
+      <label for="feedback-name">Ваше имя:</label>
+      <input type="text" name="feedback-name" id="feedback-name">
+      <label for="feedback-email">Ваше e-mail:</label>
+      <input type="email" name="feedback-email" id="feedback-email">
+      <label for="feedback-text">Текст письма:</label>
+      <textarea name="feedback-text" id="feedback-text" cols="80" rows="5"></textarea>
+      <button class="button feedback-submit" type="submit">Отправить</button>
+    </form>
     <span class="modal-close" aria-label="Закрыть" tabindex="0">x</span>
   </section>
 </body>

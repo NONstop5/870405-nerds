@@ -39,18 +39,68 @@
         </p>
       </section>
       <section>
-        <h2>СЕТКА:</h2>
-        <label for="adaptive">Адаптивная</label>
-        <input type="radio" name="grid_type" id="adaptive" value="Адаптивная">
-        <input type="radio" name="grid_type" value="Фиксированная">
-        <input type="radio" name="grid_type" value="Резиновая">
-        <h2>ОСОБЕННОСТИ:</h2>
-        <input type="checkbox" name="slider" value="Слайдер" checked>
-        <input type="checkbox" name="feuture-block" value="Блок преимуществ">
-        <input type="checkbox" name="news" value="Новости" checked>
-        <input type="checkbox" name="gallery" value="Галерея">
-        <input type="checkbox" name="basket" value="Корзина">
-        <button class="button filter-submit" type="submit">Показать</button>
+        <h2 class="visually-hidden">Фильтр по типу</h2>
+        <form class="type-filter" action="https://echo.htmlacademy.ru" method="GET">
+          <fieldset>
+            <legend>Сетка:</legend>
+            <ul>
+              <li>
+                <label>
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid_type" value="">
+                  Адаптивная
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid_type" value="">
+                  Фиксированная
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid_type" value="">
+                  Резиновая
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Особенности:</legend>
+            <ul>
+              <li>
+                <label>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" value="Слайдер" checked>
+                  Слайдер
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="feuture-block" value="Блок преимуществ">
+                  Блок преимуществ
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" value="Новости" checked>
+                  Новости
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" value="Галерея">
+                  Галерея
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="basket" value="Корзина">
+                  Корзина
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="button filter-submit" type="submit">Показать</button>
+        </form>
       </section>
     </section>
     <section class="catalog-content">

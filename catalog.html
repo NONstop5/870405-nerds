@@ -33,27 +33,24 @@
         <!--Ползунок фильтра цены-->
         <p class="price-filter-values">
           <label for="price-min">от</label>
-          <input id="price-min" type="text" name="price_min">
+          <input type="text" id="price-min" name="price_min">
           <label for="price-max">до</label>
-          <input id="price-max" type="text" name="price_max">
+          <input type="text" id="price-max" name="price_max">
         </p>
       </section>
       <section>
         <h2>СЕТКА:</h2>
-        <ul>
-          <li>Адаптивная</li>
-          <li>Фиксированная</li>
-          <li>Резиновая</li>
-        </ul>
+        <label for="adaptive">Адаптивная</label>
+        <input type="radio" name="grid_type" id="adaptive" value="Адаптивная">
+        <input type="radio" name="grid_type" value="Фиксированная">
+        <input type="radio" name="grid_type" value="Резиновая">
         <h2>ОСОБЕННОСТИ:</h2>
-        <ul>
-          <li>Слайдер</li>
-          <li>Блок преимуществ</li>
-          <li>Новости</li>
-          <li>Галерея</li>
-          <li>Корзина</li>
-        </ul>
-        <button type="submit">Показать</button>
+        <input type="checkbox" name="slider" value="Слайдер" checked>
+        <input type="checkbox" name="feuture-block" value="Блок преимуществ">
+        <input type="checkbox" name="news" value="Новости" checked>
+        <input type="checkbox" name="gallery" value="Галерея">
+        <input type="checkbox" name="basket" value="Корзина">
+        <button class="button filter-submit" type="submit">Показать</button>
       </section>
     </section>
     <section class="catalog-content">
@@ -157,16 +154,16 @@
 
   <section class="modal modal-feedback">
     <h2>Напишите нам</h2>
-    <form action="echo.htmlacademy.ru" method="POST">
+    <form class="feedback-form" action="https://echo.htmlacademy.ru" method="POST">
       <label for="feedback-name">Ваше имя:</label>
-      <input type="text" name="feedback-name" id="feedback-name">
+      <input type="text" name="feedback-name" id="feedback-name" required>
       <label for="feedback-email">Ваше e-mail:</label>
-      <input type="email" name="feedback-email" id="feedback-email">
+      <input type="email" name="feedback-email" id="feedback-email" required>
       <label for="feedback-text">Текст письма:</label>
-      <textarea name="feedback-text" id="feedback-text" cols="80" rows="5"></textarea>
+      <textarea name="feedback-text" id="feedback-text" cols="80" rows="5" required></textarea>
       <button class="button feedback-submit" type="submit">Отправить</button>
     </form>
-    <span class="modal-close" aria-label="Закрыть" tabindex="0">x</span>
+    <button class="modal-close" type="button">Закрыть</button>
   </section>
 </body>
 

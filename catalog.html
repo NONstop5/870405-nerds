@@ -15,7 +15,7 @@
       <ul class="site-navigation">
         <li><a href="about.html">Студия</a></li>
         <li><a href="clients.html">Клиенты</a></li>
-        <li><a href="catalog.html">Магазин</a></li>
+        <li><a class="menu-active" href="catalog.html">Магазин</a></li>
         <li><a href="contscts.html">Контакты</a></li>
       </ul>
       <ul class="basket-navigation">
@@ -33,27 +33,78 @@
         <!--Ползунок фильтра цены-->
         <p class="price-filter-values">
           <label for="price-min">от</label>
-          <input id="price-min" type="text" name="price_min">
+          <input type="text" id="price-min" name="price_min">
           <label for="price-max">до</label>
-          <input id="price-max" type="text" name="price_max">
+          <input type="text" id="price-max" name="price_max">
         </p>
       </section>
       <section>
-        <h2>СЕТКА:</h2>
-        <ul>
-          <li>Адаптивная</li>
-          <li>Фиксированная</li>
-          <li>Резиновая</li>
-        </ul>
-        <h2>ОСОБЕННОСТИ:</h2>
-        <ul>
-          <li>Слайдер</li>
-          <li>Блок преимуществ</li>
-          <li>Новости</li>
-          <li>Галерея</li>
-          <li>Корзина</li>
-        </ul>
-        <button type="submit">Показать</button>
+        <h2 class="visually-hidden">Фильтр по типу</h2>
+        <form class="type-filter" action="https://echo.htmlacademy.ru" method="GET">
+          <fieldset>
+            <legend>Сетка:</legend>
+            <ul>
+              <li>
+                <label>
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid_type" value="">
+                  Адаптивная
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid_type" value="">
+                  Фиксированная
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid_type" value="">
+                  Резиновая
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Особенности:</legend>
+            <ul>
+              <li>
+                <label>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" value="Слайдер"
+                    checked>
+                  Слайдер
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="feuture-block"
+                    value="Блок преимуществ">
+                  Блок преимуществ
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" value="Новости"
+                    checked>
+                  Новости
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery"
+                    value="Галерея">
+                  Галерея
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="basket" value="Корзина">
+                  Корзина
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="button filter-submit" type="submit">Показать</button>
+        </form>
       </section>
     </section>
     <section class="catalog-content">
@@ -138,7 +189,7 @@
           ул. Б. Конюшенная, д. 19/8<br><br>
           тел. +7 (812) 275-75-75
         </p>
-        <a class="button map-window" href="#">Напишите нам</a>
+        <a class="button map-feedback" href="#">Напишите нам</a>
       </div>
     </section>
     <section class="social">
@@ -154,6 +205,20 @@
       </div>
     </section>
   </footer>
+
+  <section class="modal modal-feedback">
+    <h2>Напишите нам</h2>
+    <form class="feedback-form" action="https://echo.htmlacademy.ru" method="POST">
+      <label for="feedback-name">Ваше имя:</label>
+      <input type="text" name="feedback-name" id="feedback-name" required>
+      <label for="feedback-email">Ваше e-mail:</label>
+      <input type="email" name="feedback-email" id="feedback-email" required>
+      <label for="feedback-text">Текст письма:</label>
+      <textarea name="feedback-text" id="feedback-text" cols="80" rows="5" required></textarea>
+      <button class="button feedback-submit" type="submit">Отправить</button>
+    </form>
+    <button class="modal-close" type="button">Закрыть</button>
+  </section>
 </body>
 
 </html>

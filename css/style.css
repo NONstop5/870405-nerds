@@ -1,3 +1,79 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+}
+/*
+.main-header {}
+
+.main-navigation {}
+
+.site-navigation {}
+
+.basket-navigation {}
+
+.slider1 {}
+
+.slider2 {}
+
+.slider3 {}
+
+.slider-title {}
+
+.slider-text {}
+
+.button {}
+
+.button-about {}
+
+.button-red {}
+
+.button-green {}
+
+.button-yellow {}
+
+.about {}
+
+.about-slogan {}
+
+.about-text {}
+
+.about-worklist-title {}
+
+.about-worklist {}
+
+.about-worklist-item {}
+
+.indicators {}
+
+.indicators-title {}
+
+.indicators-list {}
+
+.indicators-item {}
+
+.indicators-number {}
+
+.indicators-text {}
+
+.portfolio {}
+
+.map {}
+
+.map-window {}
+
+.map-window-title {}
+
+.map-window-text {}
+
+.button-map {}
+
+.social {}
+
+.social-button {}
+*/
+.modal {
+  display: none;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;

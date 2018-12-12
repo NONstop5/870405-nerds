@@ -1,13 +1,13 @@
+/* Общие */
+
 body {
   margin: 0;
   padding: 0;
-
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   color: #000000;
-
   background-color: #ffffff;
 }
 
@@ -15,18 +15,37 @@ a {
   text-decoration: none;
 }
 
+.horizont-line {
+  width: 1160px;
+  height: 2px;
+  background-color: #eeeeee;
+}
+
 .button {
   display: block;
   width: 240px;
   height: 50px;
-  background-color: #fb565a;
+  font: inherit;
   font-size: 18px;
   line-height: 18px;
   font-weight: 500;
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
+  background-color: #fb565a;
+  border: none;
 }
+
+.button:hover, .button:focus {
+  background-color: #e74246;
+}
+
+.button:active {
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+  background-color: #d7373b;
+}
+
+/* header */
 
 .main-header {
   background-color: #eeeeee;
@@ -37,7 +56,6 @@ a {
   text-transform: uppercase;
   font-weight: 500;
   color: #000000;
-
   background-color: #eeeeee;
 }
 
@@ -81,8 +99,29 @@ a {
   font-weight: 500;
   line-height: 55px;
   color: #000000;
-
   background-color: #eeeeee;
+}
+
+/* main */
+
+.features-list {
+  list-style: none;
+}
+
+.features-item {
+  text-align: left;
+}
+
+.features h3 {
+  color: #000000;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.features p {
+  color: #283136;
 }
 
 .button-red {
@@ -96,47 +135,190 @@ a {
   background-color: #00ca74;
 }
 
-.button-yellow {}
+.button-green:hover, .button-green:focus {
+  background-color: #00bc6c;
+}
 
-.about {}
+.button-green:active {
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+  background-color: #00aa62;
+}
 
-.about-slogan {}
+.button-yellow {
+  width: 160px;
+  height: 50px;
+  background-color: #efc84a;
+}
 
-.about-text {}
+.button-yellow:hover, .button-yellow:focus {
+  background-color: #eab534;
+}
 
-.about-worklist-title {}
+.button-yellow:active {
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+  background-color: #e5a722;
+}
 
-.about-worklist {}
+.about {
+  background-color: #ffffff;
+}
 
-.about-worklist-item {}
+.about-slogan {
+  color: #000000;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px;
+}
 
-.indicators {}
+.about-text {
+  color: #283136;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
 
-.indicators-title {}
+.about-worklist-title {
+  color: #000000;
+  font-family: "Roboto - Bold";
+  font-weight: 700;
+  text-transform: uppercase;
+}
 
-.indicators-list {}
+.about-worklist {
+  list-style: none;
+}
+
+.about-worklist li:before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 2px;
+  vertical-align: middle;
+  margin-right: 10px;
+  background-color: #fb565a;
+}
+
+.indicators {
+  background-color: #ffffff;
+}
+
+.indicators-title {
+  color: #000000;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.indicators-list {
+  list-style: none;
+}
 
 .indicators-item {}
 
-.indicators-number {}
+.indicators-number {
+  color: #000000;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 10.06px;
+}
 
-.indicators-text {}
+.indicators-text {
+  color: #283136;
+  font-weight: 400;
+  line-height: 18px;
+}
 
-.portfolio {}
+.portfolio {
+  background-color: #ffffff;
+}
 
-.map {}
+.portfolio-list {
+  list-style: none;
+}
 
-.map-window {}
+.portfolio-item a {
+  opacity: 0.2;
+}
 
-.map-window-title {}
+.portfolio-item a:hover,
+.portfolio-item a:focus {
+  opacity: 1;
+}
 
-.map-window-text {}
+.portfolio-item a:active {
+  opacity: 0.1;
+}
 
-.button-map {}
+.map {
+  background-color: #eeeeee;
+}
 
-.social {}
+.map-window {
+  background-color: #ffffff;
+}
 
-.social-button {}
+.map-window-title {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.map-window-text {
+  color: #666666;
+  line-height: 18px;
+}
+
+.button-map {
+  width: 219px;
+  height: 50px;
+}
+
+.social {
+  background-color: #ffffff;
+}
+
+.social-title {
+  color: #000000;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.social-text {
+  color: #444444;
+  line-height: 22px;
+}
+
+.social-list {
+  list-style: none;
+}
+
+.social-item {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.social-button {
+  display: block;
+  width: 79px;
+  height: 79px;
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: #e1e1e1;
+}
+
+.social-button:hover,
+.social-button:focus {
+  color: #ffffff;
+  background-color: #e74246;
+}
+
+.social-button:active {
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+  background-color: #d7373b;
+  color: #ffffff;
+}
 
 .modal {
   display: none;

@@ -3,7 +3,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -22,16 +22,19 @@ a {
 }
 
 .button {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 240px;
-  height: 50px;
+  padding-top: 18px;
+  padding-bottom: 19px;
   font: inherit;
   font-size: 18px;
   line-height: 18px;
   font-weight: 500;
   color: #ffffff;
   text-transform: uppercase;
-  text-align: center;
+
   background-color: #fb565a;
   border: none;
   border-radius: 3px;
@@ -120,6 +123,11 @@ a {
 
 
 /* index.html main */
+.features {
+  width: 1160px;
+  border-bottom: 2px solid #eeeeee;
+  background-color: #ffffff;
+}
 
 .features-list {
   list-style: none;
@@ -143,12 +151,10 @@ a {
 
 .button-red {
   width: 160px;
-  height: 50px;
 }
 
 .button-green {
   width: 160px;
-  height: 50px;
   background-color: #00ca74;
 }
 
@@ -163,7 +169,6 @@ a {
 
 .button-yellow {
   width: 160px;
-  height: 50px;
   background-color: #efc84a;
 }
 
@@ -205,7 +210,7 @@ a {
   list-style: none;
 }
 
-.about-worklist li:before {
+.about-worklist li::before {
   content: "";
   display: inline-block;
   width: 25px;
@@ -216,6 +221,8 @@ a {
 }
 
 .indicators {
+  width: 1160px;
+  border-bottom: 2px solid #eeeeee;
   background-color: #ffffff;
 }
 
@@ -245,6 +252,8 @@ a {
 }
 
 .portfolio {
+  width: 1160px;
+  border-bottom: 2px solid #eeeeee;
   background-color: #ffffff;
 }
 
@@ -263,6 +272,10 @@ a {
 
 .portfolio-item a:active {
   opacity: 0.1;
+}
+
+.map {
+  margin-top: 10px;
 }
 
 /* catalog.html main */
@@ -345,7 +358,6 @@ a {
 
 .button-grey {
   width: 260px;
-  height: 50px;
   background-color: #eeeeee;
 }
 
@@ -375,14 +387,6 @@ a {
   list-style: none;
 }
 
-.catalog-sort-item,
-.catalog-sort-item a:active {
-  color: #000000;
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-}
-
 .catalog-sort-item a {
   color: #000000;
   font-size: 14px;
@@ -391,9 +395,19 @@ a {
   opacity: 0.3;
 }
 
-.catalog-sort-item a:hover,
-.catalog-sort-item a:focus {
+.catalog-sort-item a[href]:hover,
+.catalog-sort-item a[href]:focus {
   opacity: 0.6;
+}
+
+.catalog-sort-item .catalog-sort-active,
+.catalog-sort-item .catalog-sort-arrow-active,
+.catalog-sort-item a:active {
+  color: #000000;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  opacity: 1;
 }
 
 .catalog-cards {
@@ -412,7 +426,6 @@ a {
 
 .button-order {
   width: 200px;
-  height: 50px;
 }
 
 .pagination {
@@ -429,32 +442,20 @@ a {
 
 .button-page {
   width: 50px;
-  height: 50px;
   color: #000000;
   font-weight: 500;
   line-height: 18px;
+
   background-color: #eeeeee;
 }
 
 .button-page.next {
   width: 260px;
-  height: 50px;
-  background-color: #eeeeee;
 }
 
-.button-page:hover,
-.button-page:focus,
-.button-page.next:hover,
-.button-page.next:focus {
+.pagination-item a[href]:hover,
+.pagination-item a[href]:focus {
   background-color: #dfdfdf;
-}
-
-.button-page:active,
-.button-page.next:active {
-  opacity: 0.3;
-
-  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
-  background-color: #d5d5d5;
 }
 
 .button-page.active {
@@ -464,6 +465,13 @@ a {
 
   background-color: #ffffff;
   border: 3px solid #dbdbdb;
+}
+
+.pagination-item a[href]:active {
+  opacity: 0.3;
+
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+  background-color: #d5d5d5;
 }
 
 
@@ -492,7 +500,6 @@ a {
 
 .button-map {
   width: 219px;
-  height: 50px;
 }
 
 .social {

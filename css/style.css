@@ -92,17 +92,72 @@ a {
   color: #000000;
 }
 
-.slider1 {}
+.slider {
+  position: relative;
+}
 
-.slider2 {}
+.slider h3 {
+  color: #000000;
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
+}
 
-.slider3 {}
+.slider p {
+  color: #283136;
+}
 
-.slider-title {}
+.slider-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
-.slider-text {}
+.slider-item {
+  display: none;
+}
 
-.slider-button {}
+.slider-item:nth-child(1) {
+  display: block;
+
+  background-image: url("img/slider1.png");
+  background-repeat: no-repeat;
+}
+
+.slider-controls {
+  position: absolute;
+  left: 50%;
+  bottom: 100px;
+}
+
+.slider-controls i {
+  position: relative;
+
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin: 8px;
+
+  border-radius: 50%;
+  cursor: pointer;
+
+  background-color: #ffffff;
+}
+
+.slider-controls i.active::after {
+  content: "";
+
+  position: absolute;
+  top: 4px;
+  left: 4px;
+
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 2px solid #c1c1c1;
+
+  background-color: #ffffff;
+}
 
 /* catalog.html header */
 .page-header {

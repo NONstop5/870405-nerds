@@ -274,10 +274,6 @@ a {
   opacity: 0.1;
 }
 
-.map {
-  margin-top: 10px;
-}
-
 /* catalog.html main */
 .left-panel {
   background-color: #ffffff;
@@ -478,6 +474,7 @@ a {
 /* index.html footer */
 /* catalog.html footer */
 .map {
+  margin-top: 10px;
   background-color: #eeeeee;
 }
 

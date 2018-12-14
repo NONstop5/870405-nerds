@@ -3,6 +3,9 @@
 
 <head>
   <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Нёрдс</title>
 </head>
 
@@ -19,7 +22,7 @@
         <li><a href="contscts.html">Контакты</a></li>
       </ul>
       <ul class="basket-navigation">
-        <li><a href="basket.html">Корзина</a></li>
+        <li><a class="menu-active" href="basket.html">Корзина</a></li>
       </ul>
     </nav>
     <section class="page-header">
@@ -33,97 +36,99 @@
         <!--Ползунок фильтра цены-->
         <p class="price-filter-values">
           <label for="price-min">от</label>
-          <input type="text" id="price-min" name="price_min">
+          <input type="text" id="price-min" name="price_min" value="0">
           <label for="price-max">до</label>
-          <input type="text" id="price-max" name="price_max">
+          <input type="text" id="price-max" name="price_max" value="15 000">
         </p>
       </section>
-      <section>
+      <section class="filters">
         <h2 class="visually-hidden">Фильтр по типу</h2>
-        <form class="type-filter" action="https://echo.htmlacademy.ru" method="GET">
-          <fieldset>
+        <form class="filters-form" action="https://echo.htmlacademy.ru" method="GET">
+          <fieldset class="filters-grid">
             <legend>Сетка:</legend>
-            <ul>
-              <li>
+            <ul class="filters-grid-list">
+              <li class="filters-grid-item">
                 <label>
-                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid_type" value="">
+                  <input class="visually-hidden" type="radio" name="grid_type" value="">
                   Адаптивная
                 </label>
               </li>
-              <li>
+              <li class="filters-grid-item">
                 <label>
-                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid_type" value="">
+                  <input class="visually-hidden" type="radio" name="grid_type" value="">
                   Фиксированная
                 </label>
               </li>
-              <li>
+              <li class="filters-grid-item">
                 <label>
-                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid_type" value="">
+                  <input class="visually-hidden" type="radio" name="grid_type" value="">
                   Резиновая
                 </label>
               </li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="filters-type">
             <legend>Особенности:</legend>
-            <ul>
-              <li>
+            <ul class="filters-type-list">
+              <li class="filters-type-item">
                 <label>
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" value="Слайдер"
+                  <input class="visually-hidden" type="checkbox" name="slider" value="Слайдер"
                     checked>
                   Слайдер
                 </label>
               </li>
-              <li>
+              <li class="filters-type-item">
                 <label>
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="feuture-block"
+                  <input class="visually-hidden" type="checkbox" name="feuture-block"
                     value="Блок преимуществ">
                   Блок преимуществ
                 </label>
               </li>
-              <li>
+              <li class="filters-type-item">
                 <label>
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" value="Новости"
+                  <input class="visually-hidden" type="checkbox" name="news" value="Новости"
                     checked>
                   Новости
                 </label>
               </li>
-              <li>
+              <li class="filters-type-item">
                 <label>
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery"
+                  <input class="visually-hidden" type="checkbox" name="gallery"
                     value="Галерея">
                   Галерея
                 </label>
               </li>
-              <li>
+              <li class="type-filter-item">
                 <label>
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="basket" value="Корзина">
+                  <input class="visually-hidden" type="checkbox" name="basket" value="Корзина">
                   Корзина
                 </label>
               </li>
             </ul>
           </fieldset>
-          <button class="button filter-submit" type="submit">Показать</button>
+          <button class="button button-grey" type="submit">Показать</button>
         </form>
       </section>
     </section>
     <section class="catalog-content">
       <section class="catalog-sort">
         <h2>СОРТИРОВАТЬ:</h2>
-        <a class="catalog-sort-active" href="#">по цене</a>
-        <a href="#">по типу</a>
-        <a href="#">по названию</a>
-        <a class="catalog-sort-arrowdown" href="#" aria-label="по убыванию"></a>
-        <a class="catalog-sort-arrowdown" href="#" aria-label="по возрастанию"></a>
+        <ul class="catalog-sort-list">
+          <li class="catalog-sort-item"><a class="catalog-sort-active">по цене</a></li>
+          <li class="catalog-sort-item"><a href="#">по типу</a></li>
+          <li class="catalog-sort-item"><a href="#">по названию</a></li>
+          <li class="catalog-sort-item"><a class="catalog-sort-arrow-active" aria-label="по убыванию">asd</a></li>
+          <li class="catalog-sort-item"><a class="catalog-sort-arrow" href="#" aria-label="по возрастанию">asd</a></li>
+        </ul>
       </section>
       <section class="catalog-cards">
         <h2 class="visually-hidden">Каталог товаров</h2>
-        <article class="catalog-card-hover">
+        <article class="catalog-card">
           <img src="img/sedona.jpg" width="360" height="576" alt="Sedona">
-          <div class="catalog-card-desc visually-hidden">
+          <div class="catalog-card-desc">
             <h3>Sedona</h3>
             <p>Информационный сайт для туристов</p>
-            <a class="button catalog-order" href="#">9 900 руб.</a>
+            <a class="button button-order" href="#">9 900 руб.</a>
           </div>
         </article>
         <article class="catalog-card">
@@ -131,7 +136,7 @@
           <div class="catalog-card-desc visually-hidden">
             <h3>Pink app</h3>
             <p>Продуктовый лендинг приложения для iOS и Android</p>
-            <a class="button catalog-order" href="#">9 900 руб.</a>
+            <a class="button button-order" href="#">9 900 руб.</a>
           </div>
         </article>
         <article class="catalog-card">
@@ -139,7 +144,7 @@
           <div class="catalog-card-desc visually-hidden">
             <h3>Barbershop</h3>
             <p>Сайт салона красоты. Для мужчин, да.</p>
-            <a class="button catalog-order" href="#">9 900 руб.</a>
+            <a class="button button-order" href="#">9 900 руб.</a>
           </div>
         </article>
         <article class="catalog-card">
@@ -147,7 +152,7 @@
           <div class="catalog-card-desc visually-hidden">
             <h3>Mishka</h3>
             <p>Интернет-магазин вязаных игрушек</p>
-            <a class="button catalog-order" href="#">9 900 руб.</a>
+            <a class="button button-order" href="#">9 900 руб.</a>
           </div>
         </article>
         <article class="catalog-card">
@@ -155,7 +160,7 @@
           <div class="catalog-card-desc visually-hidden">
             <h3>A plus</h3>
             <p>Лендинг курсов повышения квалификации</p>
-            <a class="button catalog-order" href="#">9 900 руб.</a>
+            <a class="button button-order" href="#">9 900 руб.</a>
           </div>
         </article>
         <article class="catalog-card">
@@ -163,17 +168,17 @@
           <div class="catalog-card-desc visually-hidden">
             <h3>Кваст</h3>
             <p>Промо-сайт производителя крафтового кваса</p>
-            <a class="button catalog-order" href="#">9 900 руб.</a>
+            <a class="button button-order" href="#">9 900 руб.</a>
           </div>
         </article>
       </section>
       <section class="pagination">
         <h2 class="visually-hidden">Нумерация страниц</h2>
         <ul class="pagination-list">
-          <li class="button pagination-item-active"><a href="#">1</a></li>
-          <li class="button pagination-item"><a href="#">2</a></li>
-          <li class="button pagination-item"><a href="#">3</a></li>
-          <li class="button pagination-item-next"><a href="#">Следующая</a></li>
+          <li class="pagination-item"><a class="button button-page active">1</a></li>
+          <li class="pagination-item"><a class="button button-page" href="#">2</a></li>
+          <li class="pagination-item"><a class="button button-page" href="#">3</a></li>
+          <li class="pagination-item"><a class="button button-page next" href="#">Следующая</a></li>
         </ul>
       </section>
     </section>
@@ -189,18 +194,18 @@
           ул. Б. Конюшенная, д. 19/8<br><br>
           тел. +7 (812) 275-75-75
         </p>
-        <a class="button map-feedback" href="#">Напишите нам</a>
+        <a class="button button-map" href="#">Напишите нам</a>
       </div>
     </section>
     <section class="social">
       <h2 class="visually-hidden">Мы в соцсетях</h2>
-      <ul>
-        <li><a class="round-button" href="#" aria-label="Нёрдс во ВКонтакте">VK</a></li>
-        <li><a class="round-button" href="#" aria-label="Нёрдс в Фэйсбук">FB</a></li>
-        <li><a class="round-button" href="#" aria-label="Нёрдс в Инстаграм">IN</a></li>
+      <ul class="social-list">
+        <li class="social-item"><a class="social-button" href="#" aria-label="Нёрдс во ВКонтакте">VK</a></li>
+        <li class="social-item"><a class="social-button" href="#" aria-label="Нёрдс в Фэйсбук">FB</a></li>
+        <li class="social-item"><a class="social-button" href="#" aria-label="Нёрдс в Инстаграм">IN</a></li>
       </ul>
       <div>
-        <p>Давайте дружить, это выгодно!</p>
+        <p class="social-title">Давайте дружить, это выгодно!</p>
         <span>Скидка 10% для друзей из социальных сетей.</span>
       </div>
     </section>

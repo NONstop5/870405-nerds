@@ -682,8 +682,8 @@ a {
   display: flex;
   margin: 0;
   padding: 70px 140px;
-  outline: 1px solid #d7373b;
   flex-grow: 1;
+  outline: 1px solid #d7373b;
 }
 
 .social-title {
@@ -692,6 +692,7 @@ a {
   font-weight: 700;
   line-height: 36px;
   outline: 1px solid #d7373b;
+  flex-wrap: nowrap;
 }
 
 .social-text {
@@ -702,6 +703,10 @@ a {
 .social-list {
   list-style: none;
   display: flex;
+  margin: 0;
+  padding: 0;
+  outline: 1px solid #d7373b;
+  align-items: center;
 }
 
 .social-item {
